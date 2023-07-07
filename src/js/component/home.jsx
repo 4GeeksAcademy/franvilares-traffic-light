@@ -10,8 +10,9 @@ const TrafficLight = () => {
         backgroundColorDiv.classList.toggle("div-amarillo", color === "yellow");
         backgroundColorDiv.classList.toggle("div-verde", color === "green");
     }, [color]);
-
+    
     const clickHandler = (selectedColor) => color === selectedColor ? setColor("") : setColor(selectedColor);
+
 
     return <>
         <div className="container-fluid">
